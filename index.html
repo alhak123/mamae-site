@@ -255,6 +255,9 @@ h2{font-size:clamp(30px,4vw,44px);font-weight:700;letter-spacing:-.01em;max-widt
 footer{padding:40px 0 48px;color:var(--navy2);font-size:15px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
 footer .logo{font-size:26px}
+footer .legal{display:flex;flex-wrap:wrap;gap:4px 8px}
+footer .legal a{color:var(--navy);font-weight:500;text-decoration:none;padding:12px 8px;border-radius:999px}
+footer .legal a:hover{background:var(--rosa1);text-decoration:underline}
 
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 @media (prefers-reduced-motion:no-preference){
@@ -631,6 +634,11 @@ footer .logo{font-size:26px}
 <footer>
   <div class="wrap">
     <span class="logo" aria-label="Mamaê"><span aria-hidden="true">Mama<span class="e">e<svg class="hat" viewBox="0 0 24 22"><use href="#heart"/></svg></span></span></span>
+    <nav class="legal" aria-label="Informações legais">
+      <a href="/termos">Termos de Uso</a>
+      <a href="/privacidade">Política de Privacidade</a>
+      <a href="mailto:multiversoideiasdigitais@gmail.com">Contato</a>
+    </nav>
     <p>© 2026 Mamaê · Feito com carinho para quem cuida.</p>
   </div>
 </footer>
